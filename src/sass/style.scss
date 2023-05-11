@@ -1,0 +1,24 @@
+/* Импорт шрифтов Montserrat и Raleway из Google Fonts API */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@400;700&display=swap');
+
+/* Импорт переменных и миксинов */
+@import 'base/variables';
+@import 'base/mixins';
+
+/* Основные стили */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    &:hover {
+        text-decoration: underline;
+    }
+}
