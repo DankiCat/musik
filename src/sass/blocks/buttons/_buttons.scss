@@ -1,0 +1,33 @@
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 18px 34px;
+    gap: 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    background-color: $general-blue;
+    color: $general-light;
+    &_header {
+        background-color: $general-light;
+        text-transform: uppercase;
+        color: $general-blue;
+    }
+    &_demo {
+        background-color: $general-red;
+    }
+    &_pricing {
+        border-radius: 5px;
+    }
+    &_blank {
+        border: 1px solid $general-blue;
+        background-color: $general-light;
+        color: $general-blue;
+    }
+    &_wide {
+        align-self: stretch;
+    }
+}

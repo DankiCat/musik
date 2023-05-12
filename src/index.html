@@ -6,11 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musik.</title>
 
+    <!-- Подключение обнуляющего файла -->
+    <link rel="stylesheet" href="css/normalize.css">
+
     <!-- Подключение основных стилей -->
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-    
+
+    <!-- Разметка хедера -->
+    <header class="header">
+        <div class="container">
+            <div class="header__row">
+                <a href="#" class="header__logo">
+                    <img src="images/logo/logo.svg" alt="Musik.">
+                </a>
+                <div class="header__navbar">
+                    <div class="header__menu">
+                        <a href="#" class="header__item">home</a>
+                        <a href="#" class="header__item">speakers
+                            <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.76375 0.655512C8.07875 0.996282 8.07875 1.54888 7.76375 1.88965L4.5704 5.34429C4.25537 5.68511 3.74464 5.68511 3.42961 5.34429L0.236259 1.88974C0.0790314 1.71951 -4.78938e-08 1.49558 -3.81498e-08 1.27267C-2.84075e-08 1.04979 0.0789151 0.825883 0.236212 0.655646C0.551248 0.314833 1.06201 0.314785 1.37705 0.655598L3.19335 2.62045L4 3.51597L4.80666 2.62043L6.62296 0.655512C6.938 0.314699 7.44872 0.314699 7.76375 0.655512Z" fill="white"/></svg>
+                        </a>
+                        <a href="#" class="header__item">schedule
+                            <svg width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.76375 0.655512C8.07875 0.996282 8.07875 1.54888 7.76375 1.88965L4.5704 5.34429C4.25537 5.68511 3.74464 5.68511 3.42961 5.34429L0.236259 1.88974C0.0790314 1.71951 -4.78938e-08 1.49558 -3.81498e-08 1.27267C-2.84075e-08 1.04979 0.0789151 0.825883 0.236212 0.655646C0.551248 0.314833 1.06201 0.314785 1.37705 0.655598L3.19335 2.62045L4 3.51597L4.80666 2.62043L6.62296 0.655512C6.938 0.314699 7.44872 0.314699 7.76375 0.655512Z" fill="white"/></svg>
+                        </a>
+                        <a href="#" class="header__item">contact us</a>
+                    </div>
+                    <button type="button" class="header__button button button_header">get tickets</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Разметка демо экрана -->
+    <section class="demo">
+        <div class="container">
+            <div class="demo__content">
+                <h1 class="demo__title title title_60">
+                    The Best experience of <span>music</span> in 2021
+                </h1>
+                <div class="demo__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae ligula placerat, eleifend ex non, vehicula libero. Suspendisse eget tellus lectus.
+                </div>
+                <div class="demo__buttons">
+                    <button class="demo__button button button_demo">Get Started</button>
+                    <button class="demo__button demo__watch"><img src="icons/play.svg" alt=""> Watch Video</button>
+                </div>
+            </div>
+        </div>
+        <div class="demo__timer">
+            <div class="demo__element"><span id="days">10</span>d</div>
+            <div class="demo__element"><span id="hours">10</span>h</div>
+            <div class="demo__element"><span id="minutes">10</span>m</div>
+            <div class="demo__element"><span id="seconds">10</span>s</div>
+        </div>
+    </section>
 
     <!-- Подключение скриптов -->
     <script src="js/script.js"></script>

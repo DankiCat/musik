@@ -1,0 +1,66 @@
+.demo {
+    height: 100vh;
+    background: url('../images/background.png') center center / cover no-repeat;
+    padding-top: 175px;
+    &__content {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        width: 810px;
+        margin: 0 auto;
+    }
+    &__title {
+        text-align: center;
+        span {
+            color: $general-light-red;
+        }
+    }
+    &__text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 38px;
+        text-align: center;
+        color: $general-light;
+    }
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    }
+    &__watch {
+        background-color: inherit;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 28px;
+        color: $general-light;
+    }
+    &__timer {
+        width: 1170px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 62px;
+        font-weight: 700;
+        font-size: 120px;
+        line-height: 146px;
+        text-align: center;
+        color: transparent;
+        -webkit-text-stroke: 2px $general-light;
+        opacity: 0.5;
+    }
+    /* &__element {
+        font-family: 'Montserrat', sans-serif;
+        span {
+            font-family: 'Montserrat', sans-serif;
+        }
+    } */
+}

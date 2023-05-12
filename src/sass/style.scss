@@ -7,18 +7,33 @@
 
 /* Основные стили */
 * {
-    margin: 0;
-    padding: 0;
     font-family: 'Raleway', sans-serif;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+}
+
+body {
+    -webkit-user-select: none;
+    user-select: none;
 }
 
 a {
-    text-decoration: none;
     color: inherit;
-    &:hover {
-        text-decoration: underline;
-    }
 }
+
+a, button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Подключение стилей заголовков и кнопок */
+@import 'blocks/titles/titles';
+@import 'blocks/buttons/buttons';
+
+/* Подключение стилей блоков */
+@import 'blocks/header/header';
+
+@import 'blocks/demo/demo';

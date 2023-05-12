@@ -1,0 +1,17 @@
+.title {
+    font-family: 'Montserrat', sans-serif;
+    color: $general-light;
+    text-transform: capitalize;
+    font-weight: 700;
+    &_34 {
+
+    }
+    &_60 {
+        font-weight: 700;
+        font-size: 60px;
+    }
+    &_72 {
+        font-size: 72px;
+        line-height: 88px;
+    }
+}
