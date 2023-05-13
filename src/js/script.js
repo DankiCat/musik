@@ -1,3 +1,4 @@
+/* Настройка хедера */
 let header = document.querySelector('header');
 
 window.addEventListener('scroll', () => {
@@ -10,6 +11,8 @@ window.addEventListener('scroll', () => {
     }
 });
 
+
+/* Настройка slick слайдера */
 $(document).ready(function(){
     $('.categories__carousel').slick({
         arrows: false,
