@@ -1,0 +1,74 @@
+.categories {
+    margin-top: 240px;
+    .container {
+        position: relative;
+    }
+    .confetti {
+        &:nth-child(1) {
+            top: 365px;
+            left: calc(-104px - 8.3vw);
+            width: 8.3vw;
+        }
+        &:nth-child(2) {
+            top: 40px;
+            left: calc(-195px - 5.9vw);
+            width: 5.9vw;
+        }
+        &:nth-child(3) {
+            top: 401px;
+            right: calc(-295px - 1.4vw);
+            width: 1.4vw;
+        }
+        &:nth-child(4) {
+            top: 104px;
+            right: calc(-176px - 2vw);
+            width: 2vw;
+        }
+    }
+    &__title {
+        span {
+            color: $general-blue;
+        }
+    }
+    &__carousel {
+        margin-top: 60px;
+        .slick-list {
+            overflow: hidden;
+        }
+        .slick-track{
+            display: flex;
+            flex-direction: row;
+        }
+    }
+    &__item {
+        margin: 0 15px;
+        background-color: rgba($color: $general-blue, $alpha: 0.1);
+        border-radius: 24px;
+        padding: 90px 120px 36px 60px;
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        transition: 0.2s ease-out;
+        &.slick-slide.slick-center {
+            opacity: 1;
+            background-color: $general-blue;
+            filter: drop-shadow(0px 10px 30px rgba($general-blue, 0.2));
+            path {
+                fill: $general-light;
+            }
+            .categories {
+                &__subtitle, &__description {
+                    color: $general-light;
+                }
+            }
+        }
+    }
+    &__description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $general-dark;
+    }
+}

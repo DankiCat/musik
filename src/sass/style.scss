@@ -13,6 +13,7 @@
 body {
     -webkit-user-select: none;
     user-select: none;
+    overflow-x: hidden;
 }
 
 a {
@@ -29,6 +30,11 @@ a, button {
     padding: 0 15px;
 }
 
+.confetti {
+    position: absolute;
+    z-index: 10;
+}
+
 /* Подключение стилей заголовков и кнопок */
 @import 'blocks/titles/titles';
 @import 'blocks/buttons/buttons';
@@ -37,3 +43,5 @@ a, button {
 @import 'blocks/header/header';
 
 @import 'blocks/demo/demo';
+
+@import 'blocks/categories/categories';

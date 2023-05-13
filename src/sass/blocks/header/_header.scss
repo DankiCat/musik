@@ -1,6 +1,11 @@
 .header {
     width: 100%;
     position: fixed;
+    transition: 0.2s all;
+    z-index: 100;
+    &_blue {
+        background-color: $general-blue;
+    }
     &__row {
         height: 120px;
         display: flex;
