@@ -52,8 +52,22 @@
         align-items: flex-start;
         gap: 30px;
         transition: 0.2s ease-out;
+        &_pop {
+            background-color: rgba($additional-2, 0.1);
+        }
+        &_folk {
+            background-color: rgba($general-red, 0.1);
+        }
+        &_instrumental {
+            background-color: rgba($additional-3, 0.1);
+        }
+        &_rock {
+            background-color: rgba($additional-4, 0.1);
+        }
+        &_jazz {
+            background-color: rgba($additional-7, 0.1);
+        }
         &.slick-slide.slick-center {
-            opacity: 1;
             background-color: $general-blue;
             filter: drop-shadow(0px 10px 30px rgba($general-blue, 0.2));
             path {
