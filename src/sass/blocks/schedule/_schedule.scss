@@ -1,0 +1,199 @@
+.schedule {
+    margin-top: 240px;
+    padding-top: 160px;
+    background: linear-gradient(0deg, rgba(#fff, 1) 0%, rgba($general-blue, 0.05) 100%);
+    .container {
+        position: relative;
+    }
+    .confetti {
+        position: absolute;
+        &:nth-child(1) {
+            width: 5vw;
+            top: 587px;
+            left: calc(-172px - 5vw);
+        }
+        &:nth-child(2) {
+            width: 5.5vw;
+            top: 743px;
+            right: calc(-194px - 5.5vw);
+        }
+        &:nth-child(3) {
+            width: 5.7vw;
+            top: 833px;
+            right: calc(-194px - 5.7vw);
+        }
+    }		
+    &__tabs {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+    &__tab {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 370px;
+        &_active {
+            .schedule {
+                &__day {
+                    color: $general-blue;
+                    opacity: 1;
+                    transition: opacity 0.2s ease-out, color 0.2s ease-out;
+                }
+                &__date {
+                    color: $general-blue;
+                    transition: color 0.2s ease-out;
+                }
+                &__line {
+                    background-color: $general-blue;
+                    opacity: 1;
+                    transition: opacity 0.2s ease-out, background-color 0.2s ease-out;
+                }
+            }
+        }
+    }
+    &__day {
+        opacity: 0.5;
+    }
+    &__date {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #222222;
+        opacity: 0.2;
+    }
+    &__line {
+        width: 100%;
+        height: 4px;
+        background-color: $general-blue;
+        opacity: 0.1;
+        margin-top: 20px;
+    }
+    &__table {
+        display: flex;
+        margin-top: 40px;
+        flex-direction: column;
+        align-items: center;
+        border: 1px solid $additional-1;
+        border-radius: 24px;
+    }
+    &__tabs-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__table-content {
+        width: 100%;
+        height: 0;
+        opacity: 0;
+        transition: opacity 0.2s ease-out;
+        overflow: hidden;
+        &_active {
+            height: auto;
+            opacity: 1;
+        }
+    }
+    &__header {
+        width: 100%;
+        padding: 41px 200px 41px 40px;
+        border-radius: 24px 24px 0 0;
+        background-color: rgba($general-blue, 0.05);
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    &__subtitle {
+        &:nth-child(1) {
+            width: 230px;
+        }
+        &:nth-child(2) {
+            width: 370px;
+        }
+        &:nth-child(3) {
+            width: 270px;
+        }
+    }
+    &__row {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px;
+        border-bottom: 1px solid $additional-1;
+        &:last-child {
+            border-bottom: none;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    &__time {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        width: 230px;
+    }
+    &__description {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        width: 370px;
+    }
+    &__speakers {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+        width: 270px;
+    }
+    &__speaker {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+    &__avatar {
+        width: 56px;
+        img {
+            width: 100%;
+        }
+    }
+    &__name-and-booth {
+        flex: 1 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__name, &__booth {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__booth {
+        opacity: 0.5;
+        span {
+            font-weight: 300;
+        }
+    }
+    &__button {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 8px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        &_live {
+            color: $general-red;
+        }
+    }
+}
