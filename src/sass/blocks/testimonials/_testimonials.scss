@@ -1,0 +1,80 @@
+.testimonials {
+    margin-top: 240px;
+    &__title {
+        text-align: center;
+    }
+    &__carousel {
+        margin-top: 60px;
+        .slick-list {
+            overflow: hidden;
+        }
+        .slick-track{
+            display: flex;
+            flex-direction: row;
+        }   
+    }
+    &__item {
+        cursor: pointer;
+        width: 770px;
+        padding-top: 10px;
+        margin: 0 15px;
+        opacity: 0.3;
+        transition: padding-top 0.2s ease-out, opacity 0.2s ease-out;
+        &.slick-slide.slick-center {
+            padding-top: 0;
+            opacity: 1;
+        }
+    }
+    &__testimonial {
+        width: 100%;
+        background-color: rgba($general-dark, 0.03);
+        padding: 20px 30px 80px 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    &__quotes {
+        &_left {
+            align-self: start;
+        }
+        &_right {
+            align-self: end;
+        }
+    }
+    &__text {
+        padding: 0 30px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: rgba($general-dark, 0.7);
+    }
+    &__user {
+        margin-top: -50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        gap: 20px;
+    }
+    &__avatar {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+            width: 120px;
+            height: 120px;
+        }
+    }
+    &__name {
+        font-weight: 800;
+        font-size: 20px;
+        line-height: 28px;
+    }
+    &__website {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: $general-blue;
+    }
+}

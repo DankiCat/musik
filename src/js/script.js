@@ -12,7 +12,7 @@ window.addEventListener('scroll', () => {
 });
 
 
-/* Настройка slick слайдера */
+/* Настройка slick слайдера в секции категорий */
 $(document).ready(function(){
     $('.categories__carousel').slick({
         arrows: false,
@@ -37,5 +37,17 @@ tabs.forEach((tab, index) => {
   
       tab.classList.add('schedule__tab_active');
       tabContent[index].classList.add('schedule__table-content_active');
+    });
+});
+
+/* Настройка slick слайдера в секции рекомендаций */
+$(document).ready(function(){
+    $('.testimonials__carousel').slick({
+        arrows: false,
+        variableWidth: true,
+        centerMode: true,
+        initialSlide: 1,
+        focusOnSelect: true,
+        touchThreshold: 5,
     });
 });
