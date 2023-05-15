@@ -51,3 +51,14 @@ $(document).ready(function(){
         touchThreshold: 5,
     });
 });
+
+/* Настройка slick слайдера в секции инстаграм постов */
+$(document).ready(function(){
+    $('.shots__carousel').slick({
+        variableWidth: true,
+        centerMode: true,
+        initialSlide: 2,
+        touchThreshold: 12,
+        slidesToShow: 3
+    });
+});

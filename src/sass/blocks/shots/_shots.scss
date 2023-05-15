@@ -1,0 +1,102 @@
+.shots {    
+    margin-top: 240px;
+    padding-top: 160px;
+    background: linear-gradient(0deg, rgba(#fff, 1) 0%, rgba($general-red, 0.05) 100%);
+    .container {
+        position: relative;
+    }
+    .confetti {
+        top: -160px;
+        left: 123px;
+        z-index: -1;
+    }
+    &__carousel {
+        position: relative;
+        margin-top: 60px;
+        .slick-list {
+            overflow: hidden;
+        }
+        .slick-track{
+            display: flex;
+            flex-direction: row;
+        }   
+        .slick-arrow {
+            font-size: 0;
+            z-index: 10;
+            position: absolute;
+            top: 185px;
+            transform: translateY(-50%);
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background-color: $general-light;
+            background-position: center center;
+            background-size: 34px;
+            background-repeat: no-repeat;
+            &.slick-prev {
+                left: calc((100% - 1200px) / 4 - 28px);
+                background-image: url('../icons/arrows/left_small.svg');
+            }
+            &.slick-next {
+                right: calc((100% - 1200px) / 4 - 28px);
+                background-image: url('../icons/arrows/right_small.svg');
+            }
+        }
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        margin: 0 15px;
+        width: 370px;
+        opacity: 0.3;
+        transition: opacity 0.2s ease-out;
+        &.slick-slide.slick-active {
+            opacity: 1;
+        }
+    }
+    &__photo {
+        width: 370px;
+        height: 370px;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    &__description {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    &__likes-comments {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+    }
+    &__likes, &__comments {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 8px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        span {
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+    &__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    &__tags {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        opacity: 0.5;
+    }
+}
