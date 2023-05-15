@@ -1,0 +1,111 @@
+.tickets {
+    margin-top: 240px;
+    .container {
+        position: relative;
+    }
+    .confetti {
+        &:nth-child(1) {
+            width: 2vw;
+            top: 51px;
+            left: calc(-180px - 2vw);
+        }
+        &:nth-child(2) {
+            width: 1.4vw;
+            top: 186px;
+            left: calc(-100px - 1.4vw);
+        }
+        &:nth-child(3) {
+            width: 2.4vw;
+            top: calc(-47px - 2.8vw);
+            right: calc(-104px - 2.4vw);
+        }
+    }
+    &__title {
+        text-align: center;
+    }
+    &__cards {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 30px 0;
+        width: 370px;
+        box-shadow: 0px 20px 100px rgba($general-blue, 0.15);
+        border-radius: 20px;
+        flex: 1 0 auto;
+        overflow: hidden;
+        &:nth-child(1) {
+            .tickets {
+                &__line {
+                    background-color: $general-dark;
+                }
+            }
+        }
+        &:nth-child(2) {
+            .tickets {
+                &__line {
+                    background-color: $general-blue;
+                }
+                &__subtitle {
+                    color: $general-blue;
+                }
+                &__price {
+                    color: $general-blue;
+                }
+            }
+        }
+        &:nth-child(3) {
+            .tickets {
+                &__line {
+                    background-color: $general-red;
+                }
+                &__subtitle {
+                    color: $general-red;
+                }
+                &__price {
+                    color: $general-red;
+                }
+            }
+        }
+    }
+    &__line {
+        width: 100%;
+        height: 4px;
+        margin-bottom: 26px;
+    }
+    &__price {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 73px;
+        text-align: center;
+        text-transform: capitalize;
+        margin-top: 15px;
+    }
+    &__bonuses {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    &__bonus {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #222222;
+        opacity: 0.5;
+        &_available {
+            opacity: 1;
+        }
+    }
+    &__button {
+        margin-top: 30px;
+    }
+}

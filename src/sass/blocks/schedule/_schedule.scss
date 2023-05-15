@@ -8,18 +8,18 @@
     .confetti {
         position: absolute;
         &:nth-child(1) {
-            width: 5vw;
-            top: 587px;
-            left: calc(-172px - 5vw);
+            width: 4.7vw;
+            top: 427px;
+            left: calc(-172px - 4.7vw);
         }
         &:nth-child(2) {
             width: 5.5vw;
-            top: 743px;
+            top: 583px;
             right: calc(-194px - 5.5vw);
         }
         &:nth-child(3) {
             width: 5.7vw;
-            top: 833px;
+            top: 673px;
             right: calc(-194px - 5.7vw);
         }
     }		
