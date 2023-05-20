@@ -4,6 +4,12 @@
     padding: 40px 0 35px 0;
     &__logo {
         width: 125px;
+        &:hover {
+            transform: none;
+        }
+        &:active {
+            transform: none;
+        }
     }
     &__content {
         margin-top: 50px;

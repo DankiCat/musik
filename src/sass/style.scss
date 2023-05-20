@@ -8,6 +8,7 @@
 /* Основные стили */
 * {
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -22,12 +23,48 @@ a {
 
 a, button {
     font-family: 'Montserrat', sans-serif;
+    transition: 0.2s ease-out;
+    &:hover {
+        -webkit-transform: translateY(-1px);
+        -moz-transform: translateY(-1px);
+        transform: translateY(-1px);
+    }
+    &:active {
+        -webkit-transform: translateY(2px);
+        -moz-transform: translateY(2px);
+        transform: translateY(2px);
+    }
 }
 
 .container {
     width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+@media (max-width: 1199.98px) {
+    .container {
+        width: 990px;
+    }
+}
+
+@media (max-width: 989.98px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (max-width: 749.98px) {
+    .container {
+        width: 570px;
+        padding: 0 10px;
+    }
+}
+
+@media (max-width: 569.98px) {
+    .container {
+        width: 100%;
+    }
 }
 
 .confetti {
@@ -37,12 +74,17 @@ a, button {
 
 /* Подключение стилей заголовков и кнопок */
 @import 'blocks/titles/titles';
+@import 'blocks/titles/titles-media';
+
 @import 'blocks/buttons/buttons';
+@import 'blocks/buttons/buttons-media';
 
 /* Подключение стилей блоков */
 @import 'blocks/header/header';
+@import 'blocks/header/header-media';
 
 @import 'blocks/demo/demo';
+@import 'blocks/demo/demo-media';
 
 @import 'blocks/categories/categories';
 

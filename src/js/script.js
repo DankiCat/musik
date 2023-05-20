@@ -1,13 +1,16 @@
 /* Настройка хедера */
-let header = document.querySelector('header');
+const header = document.querySelector('header');
+const menu = document.querySelector('.header__menu');
 
 window.addEventListener('scroll', () => {
     let scrollTop = document.documentElement.scrollTop;
 
-    if (scrollTop > 100) {
+    if (scrollTop > 0) {
         header.classList.add('header_blue');
+        menu.classList.add('header__menu_blue');
     } else {
         header.classList.remove('header_blue');
+        menu.classList.remove('header__menu_blue');
     }
 });
 
@@ -62,3 +65,26 @@ $(document).ready(function(){
         slidesToShow: 3
     });
 });
+
+/* Настройка адаптивного меню */
+const burgerLogos = document.querySelectorAll('.header__burger-logo');
+const menuItems = document.querySelectorAll('.header__item');
+
+burgerLogos.forEach((logo, i) => {
+    logo.addEventListener('click', () => {
+        toggleMenu();
+    });
+})
+
+menuItems.forEach(item => {
+    item.addEventListener('click', () => {
+        toggleMenu();
+    })
+});
+
+function toggleMenu() {
+    burgerLogos.forEach(logo => {
+        logo.classList.toggle('header__burger-logo_active');
+    });
+    menu.classList.toggle('header__menu_active');
+}

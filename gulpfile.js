@@ -3,6 +3,7 @@ const browserSync = require('browser-sync').create();
 const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const cleanCSS = require('gulp-clean-css');
+const open = require('gulp-open');
 
 // Задача для компиляции SCSS-файлов в CSS-файлы и их объединения
 function compileSass() {

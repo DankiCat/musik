@@ -5,21 +5,32 @@
     z-index: 100;
     &_blue {
         background-color: $general-blue;
+        border-bottom: 1px solid $general-light;
     }
     &__row {
         height: 120px;
         display: flex;
         flex-direction: row;
         align-items: center;
+        margin: 0 auto;
     }
     &__logo {
         flex: 1 1 auto;
+        &:hover {
+            transform: none;
+        }
+        &:active {
+            transform: none;
+        }
     }
     &__navbar {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 50px;
+    }
+    &__burger {
+        display: none;
     }
     &__menu {
         display: flex;

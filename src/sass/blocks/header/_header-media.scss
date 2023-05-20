@@ -1,0 +1,109 @@
+@media (max-width: 1499.98px) {
+    .header {
+        &__row {
+            height: 100px;
+        }
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .header {
+        &__row {
+            height: 80px;
+            width: 95%;
+        }
+    }
+}
+
+@media (max-width: 989.98px) {
+    .header {
+        &__logo {
+            img {
+                max-width: 100px;
+            }
+        }
+        &__navbar {
+            gap: 20px;
+        }
+        &__menu {
+            gap: 20px;
+        }
+        &__item {
+            gap: 5px;
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+}
+
+@media (max-width: 749.98px) {
+    .header {
+        &__navbar {
+            gap: 20px;
+        }
+        &__burger {
+            display: block;
+        }
+        &__burger-logo {
+            display: none;
+            &_active {
+                display: block;
+            }
+        }
+        &__menu {
+            height: 40px;
+            bottom: -41px;
+            right: -100%;
+            position: absolute;
+            width: 100vw;
+            visibility: hidden;
+            transition: 0.2s ease-out;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 0 calc((100vw - 520px) / 2);
+            &_active {
+                visibility: visible;
+                display: flex;
+                right: 0;
+            }
+            &_blue {
+                background-color: $general-blue;
+                border-bottom: 1px solid $general-light;
+            }
+        }
+        &__item {
+            font-size: 16px;
+            gap: 5px;
+            line-height: 20px;
+        }
+    }
+}
+
+@media (max-width: 569.98px) {
+    .header {
+        &__row {
+            height: 60px;
+            width: 100%;
+        }
+        &__navbar {
+            gap: 10px;
+        }
+        &__logo {
+            img {
+                max-width: 80px;
+            }
+        }
+        &__menu {
+            height: 30px;
+            bottom: -31px;
+            gap: 5px;
+            padding: 0 10px;
+            flex-wrap: wrap;
+        }
+        &__item {
+            font-size: 12px;
+            line-height: 16px;
+            gap: 4px;
+        }
+    }
+}

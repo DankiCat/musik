@@ -1,0 +1,56 @@
+@media (max-width: 1199.98px) {
+    .title {
+        &_72 {
+            font-size: 60px;
+            line-height: 70px;
+        }
+    }
+}
+
+@media (max-width: 749.98px) {
+    .title {
+        &_24 {
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 38px;
+        }
+        &_34 {
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 130%;
+        }
+        &_60 {
+            font-weight: 700;
+            font-size: 60px;
+            color: $general-light;
+        }
+        &_72 {
+            font-size: 46px;
+            line-height: 56px;
+        }
+    }
+}
+
+@media (max-width: 569.98px) {
+    .title {
+        &_24 {
+            font-weight: 800;
+            font-size: 24px;
+            line-height: 38px;
+        }
+        &_34 {
+            font-weight: 700;
+            font-size: 34px;
+            line-height: 130%;
+        }
+        &_60 {
+            font-weight: 700;
+            font-size: 60px;
+            color: $general-light;
+        }
+        &_72 {
+            font-size: 40px;
+            line-height: 50px;
+        }
+    }
+}
