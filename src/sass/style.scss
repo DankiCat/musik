@@ -42,15 +42,45 @@ a, button {
     padding: 0 15px;
 }
 
+section {
+    margin-top: 240px;
+}
+
+.confetti {
+    position: absolute;
+    z-index: 10;
+}
+
+@media (max-width: 1649.98px) {
+    .confetti {
+        display: none;
+    }
+}
+
+@media (max-width: 1499.98px) {
+    section {
+        margin-top: 180px;
+    }
+    .confetti {
+        display: none;
+    }
+}
+
 @media (max-width: 1199.98px) {
     .container {
         width: 990px;
+    }
+    section {
+        margin-top: 100px;
     }
 }
 
 @media (max-width: 989.98px) {
     .container {
         width: 750px;
+    }
+    section {
+        margin-top: 80px;
     }
 }
 
@@ -59,17 +89,18 @@ a, button {
         width: 570px;
         padding: 0 10px;
     }
+    section {
+        margin-top: 60px;
+    }
 }
 
 @media (max-width: 569.98px) {
     .container {
         width: 100%;
     }
-}
-
-.confetti {
-    position: absolute;
-    z-index: 10;
+    section {
+        margin-top: 40px;
+    }
 }
 
 /* Подключение стилей заголовков и кнопок */
@@ -87,6 +118,7 @@ a, button {
 @import 'blocks/demo/demo-media';
 
 @import 'blocks/categories/categories';
+@import 'blocks/categories/categories-media';
 
 @import 'blocks/about/about';
 
