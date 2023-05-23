@@ -1,0 +1,110 @@
+@media (max-width: 1499.98px) {
+    .about {
+        &__photos {
+            min-width: 500px;
+            height: 520px;
+        }
+        &__photo {
+            width: 450px;
+            height: 470px;  
+            &_active {
+                top: 50px;
+                left: 50px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .about {
+        &__row {
+            gap: 50px;
+        }
+        &__photos {
+            min-width: 450px;
+            height: 470px;
+        }
+        &__photo {
+            width: 400px;
+            height: 420px;  
+        }
+    }
+}
+
+@media (max-width: 989.98px) {
+    .about {
+        &__row {
+            gap: 30px;
+        }
+        &__photos {
+            min-width: 350px;
+            height: 370px;
+        }
+        &__photo {
+            border-radius: 20px;
+            width: 300px;
+            height: 320px;  
+        }
+        &__text { 
+            margin-top: 16px;
+        }
+        &__button {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 749.98px) {
+    .about {
+        &__row {
+            gap: 20px;
+        }
+        &__photos {
+            min-width: 230px;
+            height: 250px;
+        }
+        &__photo {
+            border-radius: 16px;
+            width: 200px;
+            height: 220px; 
+            &_active {
+                top: 30px;
+                left: 30px;
+            } 
+        }
+        &__text { 
+            font-size: 11px;
+            line-height: 16px;
+        }
+        &__button {
+            margin-top: 40px;
+        }
+    }
+}
+
+@media (max-width: 569.98px) {
+    .about {
+        &__row {
+            flex-direction: column;
+        }
+        &__photos {
+            min-width: 200px;
+            height: 220px;
+        }
+        &__photo {
+            border-radius: 12px;
+            width: 180px;
+            height: 200px; 
+            &_active {
+                top: 20px;
+                left: 20px;
+            } 
+        }
+        &__text {
+            margin-top: 12px;
+        }
+        &__button {
+            margin-top: 16px;
+        }
+    }
+}
