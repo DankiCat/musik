@@ -34,7 +34,7 @@
 @media (max-width: 989.98px) {
     .about {
         &__row {
-            gap: 30px;
+            gap: 20px;
         }
         &__photos {
             min-width: 350px;
@@ -47,6 +47,8 @@
         }
         &__text { 
             margin-top: 16px;
+            font-size: 14px;
+            line-height: 20px;
         }
         &__button {
             margin-top: 40px;
@@ -56,9 +58,6 @@
 
 @media (max-width: 749.98px) {
     .about {
-        &__row {
-            gap: 20px;
-        }
         &__photos {
             min-width: 230px;
             height: 250px;

@@ -1,5 +1,4 @@
 .singers {
-    margin-top: 240px;
     .container {
         position: relative;
     }
@@ -69,8 +68,10 @@
     }
     &__photo {
         border-radius: 24px;
+        width: 100%;
     }
     &__shadow {
+        width: 100%;
         position: absolute;
         top: 40px;
         left: 0;
