@@ -1,0 +1,125 @@
+@media (max-width: 1499.98px) {
+    .testimonials {
+        &__carousel {
+            margin-top: 40px;  
+        }
+        &__avatar {
+            width: 100px;
+            height: 100px;
+            img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+        &__name {
+            line-height: 24px;
+        }
+        &__website {
+            line-height: 20px;
+        }
+    }
+}
+
+@media (max-width: 1199.98px) {
+    .testimonials {
+        &__carousel {
+            margin-top: 30px;
+        }
+        &__item {
+            width: 700px;
+            margin: 0 10px;
+        }
+        &__testimonial {
+            padding: 15px 25px 50px 25px;
+        }
+        &__text {
+            padding: 0 25px;
+            font-size: 15px;
+            line-height: 22px;
+        }
+        &__user {
+            gap: 10px;
+        }
+        &__name {
+            font-size: 18px;
+        }
+        &__website {
+            font-size: 14px;
+        }
+    }    
+}
+
+@media (max-width: 989.98px) {
+    .testimonials {
+        &__carousel {
+            margin-top: 15px;
+        }
+        &__item {
+            width: 600px;
+        }
+        &__testimonial {
+            padding: 10px 10px 40px 10px;
+        }
+        &__text {
+            padding: 0 5px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        &__user {
+            gap: 8px;
+            margin-top: -40px;
+        }
+        &__avatar {
+            width: 80px;
+            height: 80px;
+            img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+        &__name {
+            font-size: 16px;
+            line-height: 18px;
+        }
+        &__website {
+            line-height: 16px;
+        }
+    }   
+}
+
+@media (max-width: 749.98px) {
+    .testimonials {
+        &__item {
+            width: 500px;
+        }
+        &__text {
+            font-size: 13px;
+            line-height: 18px;
+        }
+        &__testimonial {
+            padding: 10px 10px 30px 10px;
+        }
+        &__user {
+            gap: 5px;
+        }
+        &__avatar {
+            width: 75px;
+            height: 75px;
+            img {
+                width: 75px;
+                height: 75px;
+            }
+        }
+    }   
+}
+
+@media (max-width: 569.98px) {
+    .testimonials {
+        &__carousel {
+            margin-top: 10px;
+        }
+        &__item {
+            width: 300px;
+        }
+    }   
+}
