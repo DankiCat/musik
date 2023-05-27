@@ -62,7 +62,23 @@ $(document).ready(function(){
         centerMode: true,
         initialSlide: 2,
         touchThreshold: 12,
-        slidesToShow: 3
+        slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    arrows: false,
+                    touchThreshold: 5,
+                }
+            },
+            {
+                breakpoint: 750,
+                settings: {
+                    slidesToShow: 1,
+                    focusOnSelect: true,
+                }
+            }
+        ],
     });
 });
 
