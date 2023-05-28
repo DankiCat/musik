@@ -74,6 +74,7 @@ $(document).ready(function(){
             {
                 breakpoint: 750,
                 settings: {
+                    arrows: false,
                     slidesToShow: 1,
                     focusOnSelect: true,
                 }

@@ -3,7 +3,6 @@
 
 /* Импорт переменных и миксинов */
 @import 'base/variables';
-@import 'base/mixins';
 
 /* Основные стили */
 * {
@@ -145,3 +144,4 @@ section {
 @import 'blocks/contacts/contacts-media';
 
 @import 'blocks/footer/footer';
+@import 'blocks/footer/footer-media';
