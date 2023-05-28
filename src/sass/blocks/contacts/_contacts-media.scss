@@ -1,0 +1,148 @@
+@media (max-width: 1499.98px) {
+    .contacts {
+        padding: 80px 0;
+        &__left {
+            padding: 80px 180px 0 80px;
+        }
+        &__details {
+            margin-top: 60px;
+            gap: 30px;
+        }
+        &__form {
+            width: calc(50% - 80px);
+        }
+        &__fields {
+            margin-top: 30px;
+            gap: 20px;
+        }
+        &__button {
+            margin-top: 30px;
+        }
+    }    
+}
+
+@media (max-width: 1199.98px) {
+    .contacts {
+        padding: 60px 0;
+        &__left {
+            padding: 60px 60px 0 60px;
+        }
+        &__details {
+            margin-top: 60px;
+            gap: 20px;
+        }
+        &__contact {
+            gap: 5px;
+            font-size: 15px;
+            line-height: 18px;
+        }
+        &__form {
+            width: calc(50% - 60px);
+        }
+        &__fields {
+            margin-top: 20px;
+            gap: 10px;
+        }
+        &__input, &__textarea {       
+            padding-bottom: 5px;
+        }
+        &__button {
+            margin-top: 20px;
+        }
+    }   
+}
+
+@media (max-width: 989.98px) {
+    .contacts {
+        padding: 40px 0;
+        &__left {
+            padding: 40px 40px 0 40px;
+        }
+        &__details {
+            margin-top: 40px;
+            gap: 15px;
+        }
+        &__contact {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        &__form {
+            width: calc(50% - 40px);
+        }
+        &__fields {
+            margin-top: 15px;
+        }
+        &__input, &__textarea {       
+            padding-bottom: 3px;
+            font-size: 15px;
+            line-height: 22px;
+        }
+        &__button {
+            margin-top: 15px;
+        }
+    } 
+}
+
+@media (max-width: 749.98px) {
+    .contacts {
+        padding: 20px 0;
+        &__left {
+            padding: 20px 20px 0 20px;
+        }
+        &__subtitle {
+            font-size: 20px;
+            line-height: 30px;
+        }
+        &__details {
+            margin-top: 20px;
+            gap: 10px;
+        }
+        &__contact {
+            font-size: 13px;
+            line-height: 14px;
+        }
+        &__form {
+            width: calc(50% - 20px);
+        }
+        &__fields {
+            margin-top: 10px;
+        }
+        &__input, &__textarea {       
+            padding-bottom: 0px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+        &__button {
+            margin-top: 10px;
+        }
+    } 
+}
+
+@media (max-width: 569.98px) {
+    .contacts {
+        margin-top: 265px;
+        padding: 10px 0;
+        &__left {
+            width: 100vw;
+            height: 225px;
+            top: -225px;
+            padding: 10px 10px 0 10px;
+        }
+        &__details {
+            margin-top: 10px;
+        }
+        &__contact {
+            font-size: 13px;
+            line-height: 18px;
+        }
+        &__form {
+            width: 100%;
+            margin-left: 0;
+        }
+        &__input, &__textarea {       
+            padding-bottom: 3px;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
